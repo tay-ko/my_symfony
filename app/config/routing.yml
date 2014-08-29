@@ -1,0 +1,3 @@
+MyJobeetBundle_job:
+        resource: "@MyJobeetBundle/Resources/config/routing/job.yml"
+        prefix:   /job

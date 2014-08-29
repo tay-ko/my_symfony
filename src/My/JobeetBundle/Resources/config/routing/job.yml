@@ -1,0 +1,30 @@
+my_job:
+    path:     /
+    defaults: { _controller: "MyJobeetBundle:Job:index" }
+
+my_job_show:
+    path:     /{id}/show
+    defaults: { _controller: "MyJobeetBundle:Job:show" }
+
+my_job_new:
+    path:     /new
+    defaults: { _controller: "MyJobeetBundle:Job:new" }
+
+my_job_create:
+    path:     /create
+    defaults: { _controller: "MyJobeetBundle:Job:create" }
+    requirements: { _method: post }
+
+my_job_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "MyJobeetBundle:Job:edit" }
+
+my_job_update:
+    path:     /{id}/update
+    defaults: { _controller: "MyJobeetBundle:Job:update" }
+    requirements: { _method: post|put }
+
+my_job_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "MyJobeetBundle:Job:delete" }
+    requirements: { _method: post|delete }
