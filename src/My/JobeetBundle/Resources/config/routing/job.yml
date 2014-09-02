@@ -3,7 +3,7 @@ my_job:
     defaults: { _controller: "MyJobeetBundle:Job:index" }
 
 my_job_show:
-    path:     /{id}/show
+    pattern:  /{company}/{location}/{id}/{position}
     defaults: { _controller: "MyJobeetBundle:Job:show" }
 
 my_job_new:
